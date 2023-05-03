@@ -5,12 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finglish On Huono</title>
+    <style>
+      /* Container for the row of text */
+      .text-container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        z-index: 1;
+      }
+
+      #textContainer1 {
+        margin-top: 10vw;
+      }
+      #textContainer2 {
+        margin-top: 20vw;
+      }
+
+      /* Style for the text */
+      .text {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000000;
+      }
+    </style>
   </head>
   <body>
-    <section>
-      <div>
-        <h1 class="otsikko">je</h1>
+    <div class="text-container" id="textContainer1">
+      <div class="text">
+        <p>
+          This is the first row of text that will change opacity when scrolling.
+        </p>
       </div>
-    </section>
+    </div>
+
+    <div class="text-container" id="textContainer1">
+      <div class="text">
+        <p>
+          This is the second row of text that will change opacity when
+          scrolling.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
