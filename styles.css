@@ -2,12 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* #010712 */
+/* #173158 */
+
 body {
-  background-color: #041227;
+  background-color: #010712;
   background-image: linear-gradient(
-    #041227 15%,
+    #010712 15%,
     50%,
-    #2e4f80 70%,
+    #173158 70%,
     transparent 100%
   );
   background-attachment: fixed;
@@ -38,4 +41,90 @@ body {
 }
 #textContainer2 {
   margin-top: 20vw;
+}
+
+nav {
+  display: flex;
+  padding: 2vw;
+  padding-left: 4vw;
+  padding-right: 12vw;
+  justify-content: space-between;
+  width: 92vw;
+  height: min(4vh, 16vw);
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: #010712;
+  filter: drop-shadow(0px 6px 6px #010712);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menubuttons {
+  display: none;
+  gap: 3.5vw;
+}
+
+.menubutton {
+  color: aliceblue;
+  font-size: max(0.9vh, 0.8vw);
+  text-decoration: none;
+  filter: drop-shadow(0px 2px 2px black);
+}
+
+.palkkinimi {
+  color: aliceblue;
+  background-color: #010712;
+  border: 0px;
+  padding: 10px;
+  letter-spacing: -0.04em;
+  font-size: max(0.9vh, 0.8vw);
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.palkkinimi:hover {
+  cursor: pointer;
+}
+
+.hamburgericon {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  height: 9vw;
+}
+
+@media (min-width: 680px) {
+  .menubuttons {
+    display: flex;
+  }
+  .hamburgericon {
+    display: none;
+  }
+  .menu {
+    padding-left: 4vw;
+  }
+
+  .palkkinimi {
+    /*font-size: min(4vh, 5vw);*/
+    font-weight: 400;
+    background-color: #010712;
+  }
+
+  nav {
+    padding: 2vw;
+    padding-left: 4vw;
+    padding-right: 12vw;
+    justify-content: flex-start;
+    width: 92vw;
+    height: min(4vh, 16vw);
+  }
 }
