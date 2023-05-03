@@ -2,8 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #010712 */
-/* #173158 */
+/* Varafonti: font-family: "Instrument Serif", serif; */
 
 body {
   background-color: #010712;
@@ -13,8 +12,10 @@ body {
     #173158 70%,
     transparent 100%
   );
-  background-attachment: fixed;
+  background-attachment: fixed; /*Muutetaan, kun tiedetään sivun pituus*/
   color: aliceblue;
+  margin: 0px;
+  font-family: "Hind Guntur", sans-serif;
 }
 
 .otsikko {
@@ -28,7 +29,6 @@ body {
   padding: 5vw;
 }
 
-/* Container for the row of text */
 .text-container {
   /*width: 100%;*/
   flex-direction: column;
@@ -41,6 +41,7 @@ body {
 }
 #textContainer2 {
   margin-top: 20vw;
+  /*font-family: "Instrument Serif", serif;*/
 }
 
 nav {
