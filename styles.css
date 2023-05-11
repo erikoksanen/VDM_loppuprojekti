@@ -386,7 +386,8 @@ header {
   margin-right: 45vw;
   text-align: right;
   padding: 2vw;
-  background-color: #2e4f80;  
+  background-color: #2e4f80; 
+  width: 500px; 
   
 }
 
@@ -418,4 +419,40 @@ header {
 .show {
   opacity: 1;
   filter: blur(0);
+}
+
+.linkki_v {
+  animation-duration: 1s;
+  animation-name: slideinleft;
+  animation-iteration-count: 1;
+}
+
+.linkki_o {
+  animation-duration: 1s;
+  animation-name: slideinright;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: -100%;
+   
+  }
+
+  to {
+    margin-left: 0%;
+
+  }
+}
+
+@keyframes slideinright {
+  from {
+    margin-left: 100%;
+   
+  }
+
+  to {
+    margin-right: 0%;
+
+  }
 }

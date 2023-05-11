@@ -115,37 +115,26 @@ window.addEventListener(
   false
 );
 
-
-/*const links = document.querySelectorAll('.linkki');
-
-const timeline = new ScrollTimeline({
-  scrollSource: document.scrollingElement,
-  orientation: 'block',
-  timeRange: 0.5,
-  startScrollOffset: '0%',
-  endScrollOffset: '100%',
-  fill: 'both',
-  easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-  stagger: 0.1,
-  onInstanceCreated: instance => {
-    instance.effect.target.classList.add('show');
-  },
-});
-
-links.forEach(link => {
-  link.animate([], timeline);
-});*/
-
-const observer = new IntersectionObserver((entries) => {
-    entries.foreach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+const fromtop1 = document.querySelector('#slide1').offsetTop
+const fromtop2 = document.querySelector('#slide2').offsetTop
+const fromtop3 = document.querySelector('#slide3').offsetTop
+const fromtop4 = document.querySelector('#slide4').offsetTop
 
 
-const hiddenElements = document.querySelectorAll('.linkki');
-hiddenElements.forEach((el) => observer(el));
+window.addEventListener('scroll', () =>  {
+  
+  if (window.pageYOffset > (fromtop1 - window.innerHeight)) {
+    
+    document.querySelector('#slide1').classList.add("linkki_o");
+  } if (window.pageYOffset > (fromtop2 - window.innerHeight)) {
+    
+    document.querySelector('#slide2').classList.add("linkki_v");
+  } if (window.pageYOffset > (fromtop3 - window.innerHeight)) {
+    
+    document.querySelector('#slide3').classList.add("linkki_o");
+  } if (window.pageYOffset > (fromtop4 - window.innerHeight)) {
+    
+    document.querySelector('#slide4').classList.add("linkki_v");
+  }
+ 
+})
