@@ -23,6 +23,12 @@ body {
   font-weight: bold;
   color: #000;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  margin-top: 48vh; /*ks. alempi */
+  margin-bottom: 48vh; /*ks. alempi */
 }
 
 .text-container {
@@ -36,9 +42,14 @@ body {
   z-index: 1;
 }
 
-#textContainer1 {
-  margin-top: 10vw;
+.otsikkoteksti {
+  /*width: 100%;*/
+  font-size: 4vh; /*korkeus on 4vh * otsikon rivien määrä. Ylä- ja alamarginien pitää siis olla (100vh-4vh)/2 */
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
 }
+
 #textContainer2 {
   margin-top: 20vw;
   /*font-family: "Instrument Serif", serif;*/
@@ -50,13 +61,18 @@ nav {
   padding-left: 4vw;
   padding-right: 12vw;
   justify-content: space-between;
-  width: 92vw;
-  height: min(4vh, 16vw);
+  width: 100vw;
+  /*height: min(4vh, 16vw); <-- obsolete*/
   position: fixed;
   top: 0px;
   z-index: 2;
   background-color: #010712;
   filter: drop-shadow(0px 6px 6px #010712);
+  flex-wrap: wrap;
+}
+
+.mobilenav {
+  margin-top: 5.5vh;
 }
 
 .menu {
@@ -66,27 +82,38 @@ nav {
 
 .menubuttons {
   display: none;
-  gap: 3.5vw;
+  gap: 10vw;
 }
 
 .menubutton {
   color: aliceblue;
-  font-size: max(0.9vh, 0.8vw);
+  font-size: max(1.3vh, 1.5vw);
   text-decoration: none;
   filter: drop-shadow(0px 2px 2px black);
+}
+
+.alaotsikko {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
 }
 
 #dropdown-content {
   color: aliceblue;
 }
-.palkkinimi {
+.menuotsikko {
   color: aliceblue;
   background-color: #010712;
   border: 0px;
-  padding: 10px;
   letter-spacing: -0.04em;
-  font-size: max(0.9vh, 0.8vw);
+  font-size: 1.7vh;
   margin: 0px;
+  margin-top: 1vh;
+  margin-left: 1vw;
   display: flex;
   align-items: center;
 }
@@ -103,39 +130,14 @@ nav {
   justify-content: space-around;
   height: auto;
   width: auto;
-  height: 9vw;
+  height: 5vh;
+  margin-top: 0.5vh;
+  margin-right: 0.8vw;
 }
 
 .hamburgericon:hover,
 .hamburgericon:focus {
   background-color: #2980b9;
-}
-
-@media (min-width: 680px) {
-  .menubuttons {
-    display: flex;
-  }
-  .hamburgericon {
-    display: none;
-  }
-  .menu {
-    padding-left: 4vw;
-  }
-
-  .palkkinimi {
-    /*font-size: min(4vh, 5vw);*/
-    font-weight: 400;
-    background-color: #010712;
-  }
-
-  nav {
-    padding: 2vw;
-    padding-left: 4vw;
-    padding-right: 12vw;
-    justify-content: flex-start;
-    width: 92vw;
-    height: min(4vh, 16vw);
-  }
 }
 
 .dropbtn {
@@ -158,8 +160,6 @@ nav {
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
@@ -280,7 +280,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section {
   display: block;
 }
@@ -386,23 +385,14 @@ header {
   margin-right: 45vw;
   text-align: right;
   padding: 2vw;
-  background-color: #2e4f80; 
-  width: 55vw; 
-  
+  background-color: #2e4f80;
+  width: 55vw;
 }
 
 .linkki:nth-child(odd) {
   margin-left: 45vw;
   margin-right: 0vw;
   text-align: left;
-}
-
-.otsikko {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: aliceblue;
-  margin-bottom: 10vw;
 }
 
 .linkit {
@@ -436,23 +426,49 @@ header {
 @keyframes slideinleft {
   from {
     margin-left: -100%;
-   
   }
 
   to {
     margin-left: 0%;
-
   }
 }
 
 @keyframes slideinright {
   from {
     margin-left: 100%;
-   
   }
 
   to {
     margin-right: 0%;
+  }
+}
 
+@media (min-width: 680px) {
+  /*jos laitteen leveys on yli 680px, niin: */
+
+  .menubuttons {
+    display: flex;
+    font-size: max(1.4vh, 1.3vw);
+  }
+  .hamburgericon {
+    display: none;
+  }
+  .menu {
+    padding-left: 4vw;
+  }
+
+  .palkkinimi {
+    /*font-size: min(4vh, 5vw);*/
+    font-weight: 400;
+    background-color: #010712;
+  }
+
+  nav {
+    padding: 2vw;
+    padding-left: 4vw;
+    padding-right: 12vw;
+    justify-content: flex-start;
+    width: 92vw;
+    height: min(4vh, 16vw);
   }
 }
