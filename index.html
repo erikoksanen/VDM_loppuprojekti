@@ -15,32 +15,30 @@
 
   <body>
     <nav>
-      <button type="button" onclick="topFunction()" class="menuotsikko">
-        FINGLISH - ANGLISMIT YMPÄRILLÄMME
-      </button>
-      <div class="menu">
-        <div class="menubuttons" id="dropdown-content">
-          <a class="menubutton" href="#anglismeja">anglismeja</a>
-          <a class="menubutton" href="#osiotaeiolemassa">tärpit</a>
-          <a class="menubutton" href="#luelisaa">lue lisää</a>
+      <div class="fixednav">
+        <button type="button" onclick="topFunction()" class="menuotsikko">
+          FINGLISH - ANGLISMIT YMPÄRILLÄMME
+        </button>
+        <div class="menu">
+          <div class="menubuttons" id="dropdown-content">
+            <a class="menubutton" href="#anglismeja">anglismeja</a>
+            <a class="menubutton" href="#osiotaeiolemassa">tärpit</a>
+            <a class="menubutton" href="#luelisaa">lue lisää</a>
+          </div>
+          <button onclick="myFunction()" class="dropbtn" class="hamburgericon">
+            Dropdown
+          </button>
         </div>
-        <img
-          class="hamburgericon"
-          class="dropbtn"
-          onclick="myFunction()"
-          src="Pictures/Hamburger menu.svg"
-          alt="Drop-DownMenu"
-        />
+      </div>
+
+      <div class="mobilenav" class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#anglismeja">anglismeja</a>
+          <a href="#osiotaeiolemassa">tärpit</a>
+          <a href="#luelisaa">lue lisää</a>
+        </div>
       </div>
     </nav>
-
-    <div class="mobilenav">
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#anglismeja">anglismeja</a>
-        <a href="#osiotaeiolemassa">tärpit</a>
-        <a href="#luelisaa">lue lisää</a>
-      </div>
-    </div>
 
     <div class="otsikko">
       <div class="otsikkoteksti">
@@ -102,9 +100,5 @@
     </div>
     <h2>Clickable Dropdown</h2>
     <p>Click on the button to open the dropdown menu.</p>
-
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    </div>
   </body>
 </html>
