@@ -11,68 +11,100 @@
       @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap");
     </style>
-
   </head>
 
   <body>
     <nav>
-      <button type="button" onclick="topFunction()" class="palkkinimi">
+      <button type="button" onclick="topFunction()" class="menuotsikko">
         FINGLISH - ANGLISMIT YMPÄRILLÄMME
       </button>
       <div class="menu">
         <div class="menubuttons" id="dropdown-content">
-          <a class="menubutton" href="#textContainer2">anglismeja</a>
-          <a class="menubutton" href="#projects">tärpit</a>
-          <a class="menubutton" href="#backround">lisää materiaalia</a>
+          <a class="menubutton" href="#anglismeja">anglismeja</a>
+          <a class="menubutton" href="#osiotaeiolemassa">tärpit</a>
+          <a class="menubutton" href="#luelisaa">lue lisää</a>
         </div>
         <img
           class="hamburgericon"
+          class="dropbtn"
+          onclick="myFunction()"
           src="Pictures/Hamburger menu.svg"
           alt="Drop-DownMenu"
         />
       </div>
-      <ul>
-        <li>Eka vaihtoehto</li>
-        <li>Toka vaihtoehto</li>
-        <li>Kolmas vaihtoehto</li>
-        <li>Neljäs vaihtoehto</li>
-      </ul>
     </nav>
 
-    <div class="text-container" id="textContainer1">
-      <div class="text">
-        <p>
-          This is the first row of text that will change opacity when scrolling.
-        </p>
+    <div class="mobilenav">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#anglismeja">anglismeja</a>
+        <a href="#osiotaeiolemassa">tärpit</a>
+        <a href="#luelisaa">lue lisää</a>
+      </div>
+    </div>
+
+    <div class="otsikko">
+      <div class="otsikkoteksti">
+        <p>Suomeksi sanottuna.</p>
       </div>
     </div>
 
     <div class="os__wrapper">
       <div class="os__text-container">
-      <span class="os__text-item">Tässä eka teksti</span>
-      <span class="os__text-item">Tässä toka teksti</span>
-      <span class="os__text-item">Tässä iso teksti!</span>
-      <span class="os__text-item">Ja lopetusteksti</span>
+        <span class="os__text-item">Tässä eka teksti</span>
+        <span class="os__text-item">Tässä toka teksti</span>
+        <span class="os__text-item">Tässä iso teksti!</span>
+        <span class="os__text-item">Ja lopetusteksti</span>
       </div>
     </div>
 
-    <div class="text-container" id="textContainer2">
-      <div class="text">
-        <p>
-          This is the second row of text that will change opacity when
-          scrolling.
-        </p>
+    <div class="anglismit">
+      <div class="text-container" id="anglismeja">
+        <div class="text">
+          <p>
+            This is the second row of text that will change opacity when
+            scrolling.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="otsikko">LUE LISÄÄ!</div>
-      <div class="linkit"> 
-        <a href="https://trepo.tuni.fi/bitstream/handle/10024/78502/gradu02173.pdf?sequence=1&isAllowed=y" class="linkki" id="slide1">Ammattislangina finglish <br>Nina Palmgrenin Pro gradu -tutkielman Tampereen yliopistota.</a>
-        <a href="https://www.kielikello.fi/-/karuselli-kieputin-ja-vekkula-linnanmaen-laitteiden-nimet" class="linkki" id="slide2">Linnanmäen laitteet <br>Mainio esimerkki suomen kielen paluusta!</a>
-        <a href="https://www.hs.fi/kuukausiliite/art-2000009202458.html?share=fc19d87b1957946c7037dd8f7c20dcee" class="linkki" id="slide3">HS kuukausiliite <br>Suomen kielen tulevaisuus huolestuttaa kielitieteijiää.</a>
-        <a href="https://www.ts.fi/lukijoilta/4503772" class="linkki" id="slide4">Lukijan kolumni: Suomen kieli uhattuna <br>Turun Sanomien lukijan ajatuksia.</a>
+    <div class="luelisaa" id="luelisaa">
+      <div class="alaotsikko">LUE LISÄÄ!</div>
+      <div class="linkit">
+        <a
+          href="https://trepo.tuni.fi/bitstream/handle/10024/78502/gradu02173.pdf?sequence=1&isAllowed=y"
+          class="linkki"
+          id="slide1"
+          >Ammattislangina finglish <br />Nina Palmgrenin Pro gradu -tutkielman
+          Tampereen yliopistota.</a
+        >
+        <a
+          href="https://www.kielikello.fi/-/karuselli-kieputin-ja-vekkula-linnanmaen-laitteiden-nimet"
+          class="linkki"
+          id="slide2"
+          >Linnanmäen laitteet <br />Mainio esimerkki suomen kielen paluusta!</a
+        >
+        <a
+          href="https://www.hs.fi/kuukausiliite/art-2000009202458.html?share=fc19d87b1957946c7037dd8f7c20dcee"
+          class="linkki"
+          id="slide3"
+          >HS kuukausiliite <br />Suomen kielen tulevaisuus huolestuttaa
+          kielitieteijiää.</a
+        >
+        <a
+          href="https://www.ts.fi/lukijoilta/4503772"
+          class="linkki"
+          id="slide4"
+          >Lukijan kolumni: Suomen kieli uhattuna <br />Turun Sanomien lukijan
+          ajatuksia.</a
+        >
       </div>
+    </div>
+    <h2>Clickable Dropdown</h2>
+    <p>Click on the button to open the dropdown menu.</p>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
     </div>
   </body>
 </html>
