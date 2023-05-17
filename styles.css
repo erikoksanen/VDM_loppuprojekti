@@ -24,7 +24,7 @@ body {
   font-size: 3em;
   background-image: url("Pictures/Stars.png");
   background-repeat: no-repeat;
-  background-size: 50% 50%;
+  background-size: 92% 35%;
   background-position: center;
   font-size: 1.5em;
   font-weight: bold;
@@ -34,9 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   color: aliceblue;
-  height: 91vh;
-  /*margin-top: 43vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
-  /*margin-bottom: 48vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
+  height: 100vh;
 }
 
 .text-container {
@@ -52,22 +50,26 @@ body {
   margin-top: 3vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .ball {
   border-radius: 99999px;
-  height: 8em;
-  width: 8em;
+  height: 15vh;
+  width: 15vh;
   background-color: #173158;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+h1 {
+  font-size: 1.6em;
+}
+
 .otsikkoteksti {
   /*width: 100%;*/
-  font-size: 10vh; /*korkeus on 4vh * otsikon rivien määrä. Ylä- ja alamarginien pitää siis olla yhteensä (100vh-4vh-nav) */
+  font-size: 6vh;
   flex-direction: column;
   line-height: normal;
   text-align: center;
@@ -85,6 +87,7 @@ nav {
   justify-content: flex-start;
   width: 100vw;
   border: 0px;
+  height: 0vh;
 }
 
 .fixednav {
@@ -94,14 +97,14 @@ nav {
   top: 0px;
   z-index: 2;
   background-color: #010712;
-  filter: drop-shadow(0px 6px 6px #010712);
+  /*filter: drop-shadow(0px 6px 6px #010712);*/
   justify-content: space-between;
   align-items: center;
   width: 100vw;
 }
 
 .mobilenav {
-  margin-top: 5.5vh;
+  margin-top: 5.1vh; /* = dropbtn padding + dropbtn font-size */
 }
 
 .menu {
@@ -123,7 +126,7 @@ nav {
 }
 
 .alaotsikko {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
   color: #000;
   padding: 0;
@@ -141,11 +144,15 @@ nav {
   background-color: #010712;
   border: 0px;
   letter-spacing: -0.04em;
-  font-size: 1.7vh;
+  font-size: 1.8vh;
   margin-top: 0vh;
   margin-left: 1vw;
   display: flex;
   align-items: center;
+}
+
+.dropdown-content {
+  font-size: 1.8vh;
 }
 
 .palkkinimi:hover {
@@ -182,7 +189,7 @@ nav {
   background-color: #010712;
   color: white;
   padding: 1.5vh;
-  font-size: 2vh;
+  font-size: 1.8vh;
   border: none;
   cursor: pointer;
   justify-content: flex-end;
@@ -207,9 +214,10 @@ nav {
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 3;
   width: 100vw;
   justify-content: space-around;
+  position: fixed;
 }
 
 .dropdown-content a {
@@ -311,7 +319,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -387,7 +394,7 @@ header {
   text-align: center;
   position: -webkit-sticky;
   position: sticky;
-  padding: 0 1rem;
+  padding: 0 2.5em;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -395,7 +402,7 @@ header {
 
 .fade-item {
   color: white;
-  font-size: 3rem;
+  font-size: 1.35rem;
   font-family: sans-serif;
   font-weight: 600;
   opacity: 0.2;
@@ -416,15 +423,10 @@ header {
 .fade {
   max-width: 800px;
   margin: auto;
-
 }
 
 .fade-on {
   opacity: 1;
-}
-
-.fade-text-container {
-  width: 100%;
 }
 
 @keyframes bounce {
@@ -439,13 +441,13 @@ header {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: white;
-  margin-top: 2vw;
+  color: rgb(243, 243, 229);
+  margin-top: 3vw;
   margin-right: 45vw;
   text-align: right;
-  padding: 2vw;
+  padding: 3vw 5vw;
   background-color: #2e4f80;
-  width: 55vw;
+  font-size: 0.8em;
 }
 
 .linkki:nth-child(odd) {
@@ -455,7 +457,7 @@ header {
 }
 
 .linkit {
-  margin-bottom: 10vw;
+  margin-bottom: 12vw;
 }
 
 .hidden {
@@ -539,6 +541,36 @@ header {
 
   nav {
     padding: 0px;
-    /*height: min(4vh, 16vw);*/
+  }
+
+  .otsikko {
+    background-size: 55% 50%;
+  }
+
+  .otsikkoteksti {
+    font-size: 10vh;
+  }
+
+  .fade-item {
+    font-size: 3rem;
+  }
+
+  .os__text-container {
+    padding: 0 1rem;
+  }
+
+  .ball-container {
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .ball {
+    height: 13vh;
+    width: 13vh;
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
   }
 }
