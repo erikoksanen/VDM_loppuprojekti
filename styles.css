@@ -19,6 +19,10 @@ body {
 }
 
 .otsikko {
+  background-image: url("Pictures/Stars.png");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
   font-size: 1.5em;
   font-weight: bold;
   color: #000;
@@ -27,8 +31,9 @@ body {
   align-items: center;
   justify-content: center;
   color: aliceblue;
-  margin-top: 43vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
-  margin-bottom: 48vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
+  height: 91vh;
+  /*margin-top: 43vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
+  /*margin-bottom: 48vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
 }
 
 .text-container {
@@ -303,7 +308,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
