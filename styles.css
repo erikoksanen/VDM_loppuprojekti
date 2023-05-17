@@ -187,12 +187,19 @@ nav {
 }
 .dropbtn {
   background-color: #010712;
+  background-image: url("Pictures/Hamburger\ menu.svg");
+  background-repeat: no-repeat;
+  background-image: center;
+  background-size: 100% 100%;
+  background-position-y: 50%;
   color: white;
   padding: 1.5vh;
   font-size: 1.8vh;
   border: none;
   cursor: pointer;
   justify-content: flex-end;
+  height: 5.1vh;
+  margin-right: 2vw;
 }
 
 /* Tämä vain jos mobiilin nav napin väri koko ajan eri 
@@ -220,7 +227,20 @@ nav {
   position: fixed;
 }
 
-* {box-sizing:border-box}
+.anglismiteksti {
+  font-size: 0.8em;
+  margin: 4vh 4vh 7vh 4vh;
+  text-align: left;
+  line-height: 105%;
+}
+
+.dots {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -232,10 +252,17 @@ nav {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  height: 40vh;
+}
+
+.pic1 {
+  height: 40vh;
+  width: 40vh;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -252,17 +279,18 @@ nav {
 
 /* Position the "next button" to the right */
 .next {
-  right: -15%;
+  right: -17%;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: -15%;
+  left: -17%;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(70, 97, 166, 0.8);
 }
 
@@ -289,8 +317,8 @@ nav {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1vh;
+  width: 1vh;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -298,19 +326,25 @@ nav {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #474747;
 }
 
 /* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+  height: 42vh;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .dropdown-content a {
   color: black;
@@ -581,6 +615,19 @@ header {
   display: flex;
 }
 
+#scroll-target-1 {
+  padding-bottom: 3vh;
+}
+#scroll-target-2 {
+  padding-bottom: 2vh;
+}
+#scroll-target-3 {
+  padding-bottom: 3vh;
+}
+#scroll-target-4 {
+  padding-bottom: 1vh;
+}
+
 @keyframes slideinleft {
   from {
     margin-left: -100%;
@@ -603,6 +650,19 @@ header {
 
 @media (min-width: 680px) {
   /*jos laitteen leveys on yli 680px, niin: */
+
+  #scroll-target-1 {
+    padding-bottom: 3vh;
+  }
+  #scroll-target-2 {
+    padding-bottom: 0vh;
+  }
+  #scroll-target-3 {
+    padding-bottom: 3vh;
+  }
+  #scroll-target-4 {
+    padding-bottom: 2vh;
+  }
 
   .fixednav {
     padding: 2em;
@@ -658,9 +718,9 @@ header {
   }
 
   .ball {
-    height: 13vh;
-    width: 13vh;
-    font-size: 2em;
+    height: 17vh;
+    width: 17vh;
+    font-size: 2.5vh;
   }
 
   h1 {
@@ -679,15 +739,51 @@ header {
   .linkki {
     margin-top: 1.5vw;
   }
-  
+
   .anglismikuva {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  
+
   .anglismiesimerkki {
     max-width: 30vw;
     height: auto;
+  }
+
+  .anglismiteksti {
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+
+    margin-right: 15vw;
+    margin-left: 15vw;
+    font-size: 2.5em;
+  }
+
+  .next {
+    right: -15%;
+    font-size: 3vh;
+    /*height: 8%;*/
+  }
+  .prev {
+    left: -15%;
+    font-size: 3vh;
+    /*height: 8%;*/
+  }
+
+  .fade {
+    height: 50vh;
+  }
+  .pic1 {
+    height: 50vh;
+    width: 50vh;
+  }
+  .mySlides {
+    height: 50vh;
+    margin-bottom: 2vh;
+  }
+  .dot {
+    height: 1.3vh;
+    width: 1.3vh;
   }
 }
