@@ -515,6 +515,7 @@ header {
   .fixednav {
     padding: 2em;
     width: calc(100vw - 4em); /* koko näytön leveys - 4em on yht. paddingin */
+    filter: drop-shadow(0px 6px 5px #010712);
   }
 
   .menuotsikko {
@@ -567,10 +568,23 @@ header {
   .ball {
     height: 13vh;
     width: 13vh;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 3em;
+  }
+
+  .alaotsikko {
+    font-size: 3em;
+  }
+
+  .linkit {
+    font-size: 2.5em;
+    margin-bottom: 10vw;
+  }
+
+  .linkki {
+    margin-top: 1.5vw;
   }
 }
