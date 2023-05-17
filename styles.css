@@ -385,12 +385,13 @@ header {
   gap: 0.5rem;
 }
 
-.os__text-item {
+.fade-item {
   color: white;
   font-size: 3rem;
   font-family: sans-serif;
   font-weight: 600;
   opacity: 0.2;
+  transition: 0.2s;
 }
 .os__text-item--on {
   opacity: 1;
@@ -402,6 +403,21 @@ header {
 
 .last {
   padding-top: 400vh;
+}
+
+.fade {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid red;
+
+}
+
+.fade-on {
+  opacity: 1;
+}
+
+.fade-text-container {
+  width: 100%;
 }
 
 @keyframes bounce {
