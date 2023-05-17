@@ -1,4 +1,32 @@
 
+console.log("moi");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// JavaScript code here
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  var fixedNav = document.querySelector(".fixednav");
+  fixedNav.style.filter = "none";
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+const osWrappers = document.getElementsByClassName("os__wrapper");
 
 function uuidv4() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -26,3 +54,23 @@ window.addEventListener("scroll", ()=>{
   }
 
 })
+
+const fromtop1 = document.querySelector("#slide1").offsetTop;
+const fromtop2 = document.querySelector("#slide2").offsetTop;
+const fromtop3 = document.querySelector("#slide3").offsetTop;
+const fromtop4 = document.querySelector("#slide4").offsetTop;
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > fromtop1 - window.innerHeight) {
+    document.querySelector("#slide1").classList.add("linkki_o");
+  }
+  if (window.pageYOffset > fromtop2 - window.innerHeight) {
+    document.querySelector("#slide2").classList.add("linkki_v");
+  }
+  if (window.pageYOffset > fromtop3 - window.innerHeight) {
+    document.querySelector("#slide3").classList.add("linkki_o");
+  }
+  if (window.pageYOffset > fromtop4 - window.innerHeight) {
+    document.querySelector("#slide4").classList.add("linkki_v");
+  }
+});
