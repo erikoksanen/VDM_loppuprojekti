@@ -51,8 +51,8 @@ window.addEventListener("scroll", () => {
   const windowHeight = innerHeight;
   for (fade of fadelist) {
     if (
-      fade.getBoundingClientRect().top > windowHeight / 4 &&
-      fade.getBoundingClientRect().top < windowHeight / 3
+      fade.getBoundingClientRect().top > windowHeight / 3 &&
+      fade.getBoundingClientRect().top < windowHeight / 2
     ) {
       fade.classList.add("fade-on");
     } else fade.classList.remove("fade-on");
