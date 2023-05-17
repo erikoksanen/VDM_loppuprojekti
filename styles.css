@@ -183,7 +183,7 @@ nav {
 }
 
 .luelisaa {
-  padding-top: 40vh;
+  margin-top: 60vh;
 }
 .dropbtn {
   background-color: #010712;
@@ -253,11 +253,12 @@ nav {
 .mySlides {
   display: none;
   height: 40vh;
+  margin-bottom: 2vh;
 }
 
 .pic1 {
   height: 40vh;
-  width: 40vh;
+  width: 80vw;
 }
 
 /* Next & previous buttons */
@@ -279,19 +280,13 @@ nav {
 
 /* Position the "next button" to the right */
 .next {
-  right: -17%;
+  right: -12%;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: -17%;
+  left: -12%;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(70, 97, 166, 0.8);
 }
 
 /* Caption text */
@@ -564,7 +559,7 @@ header {
   font-weight: 600;
   opacity: 0.2;
   transition: 0.2s;
-  line-height: 4.8rem;
+  line-height: 3.5vh;
 }
 .os__text-item--on {
   opacity: 1;
@@ -745,6 +740,7 @@ header {
 
   .fade-item {
     font-size: 3rem;
+    line-height: 4.8rem;
   }
 
   .os__text-container {
@@ -810,7 +806,7 @@ header {
     /*height: 8%;*/
   }
 
-  .fade {
+  .fader {
     height: 50vh;
   }
   .pic1 {
@@ -824,5 +820,11 @@ header {
   .dot {
     height: 1.3vh;
     width: 1.3vh;
+  }
+
+  /* On desktop on hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(70, 97, 166, 0.8);
   }
 }

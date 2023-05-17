@@ -1,4 +1,4 @@
-console.log("moi");
+¥console.log("moi");
 
 function topFunction() {
   document.body.scrollTop = 0;
@@ -52,7 +52,7 @@ window.addEventListener("scroll", () => {
   for (fade of fadelist) {
     if (
       fade.getBoundingClientRect().top > windowHeight / 4 &&
-      fade.getBoundingClientRect().top < windowHeight / 3.2
+      fade.getBoundingClientRect().top < windowHeight / 3
     ) {
       fade.classList.add("fade-on");
     } else fade.classList.remove("fade-on");
@@ -84,28 +84,32 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 // Miksi tämä on tärkeää?
@@ -114,7 +118,7 @@ const kulttuurit = [
   './Pictures/Group12.png'
 ];
 
-const images = document.getElementsByClassName('kulttuurikuvat');
+const images = document.getElementsByClassName("kulttuurikuvat");
 let currentIndex = 0;
 
 for (let i = 0; i < images.length; i++) {
