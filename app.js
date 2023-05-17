@@ -1,4 +1,3 @@
-
 console.log("moi");
 
 function topFunction() {
@@ -9,8 +8,8 @@ function topFunction() {
 // JavaScript code here
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-  var fixedNav = document.querySelector(".fixednav");
-  fixedNav.style.filter = "none";
+  var fixedNav = document.querySelector(".fixednav"); // mobiilissa dropshadow pois
+  fixedNav.style.filter = "none"; // mobiilissa dropshadow pois
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -36,24 +35,29 @@ function uuidv4() {
   });
 }
 
+const fade1 = document.getElementById("fade1");
+const fade2 = document.getElementById("fade2");
+const fade3 = document.getElementById("fade3");
+const fade4 = document.getElementById("fade4");
 
-const fade1 = document.getElementById("fade1")
-const fade2 = document.getElementById("fade2")
-const fade3 = document.getElementById("fade3")
-const fade4 = document.getElementById("fade4")
+const fade5 = document.getElementById("fade5");
+const fade6 = document.getElementById("fade6");
+const fade7 = document.getElementById("fade7");
+const fade8 = document.getElementById("fade8");
 
-const fadelist = [fade1, fade2, fade3, fade4]
-console.log(fade1)
-window.addEventListener("scroll", ()=>{
-  const windowHeight = innerHeight
+const fadelist = [fade1, fade2, fade3, fade4, fade5, fade6, fade7, fade8];
+console.log(fade1);
+window.addEventListener("scroll", () => {
+  const windowHeight = innerHeight;
   for (fade of fadelist) {
-    if (fade.getBoundingClientRect().top > windowHeight/3 && fade.getBoundingClientRect().top < windowHeight/2) {
-      fade.classList.add("fade-on")
-    }
-    else fade.classList.remove("fade-on")
+    if (
+      fade.getBoundingClientRect().top > windowHeight / 4 &&
+      fade.getBoundingClientRect().top < windowHeight / 3
+    ) {
+      fade.classList.add("fade-on");
+    } else fade.classList.remove("fade-on");
   }
-
-})
+});
 
 const fromtop1 = document.querySelector("#slide1").offsetTop;
 const fromtop2 = document.querySelector("#slide2").offsetTop;

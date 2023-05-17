@@ -19,6 +19,13 @@ body {
 }
 
 .otsikko {
+  font-family: "Futura";
+  text-transform: uppercase;
+  font-size: 3em;
+  background-image: url("Pictures/Stars.png");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
   font-size: 1.5em;
   font-weight: bold;
   color: #000;
@@ -27,8 +34,9 @@ body {
   align-items: center;
   justify-content: center;
   color: aliceblue;
-  margin-top: 43vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
-  margin-bottom: 48vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
+  height: 91vh;
+  /*margin-top: 43vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
+  /*margin-bottom: 48vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
 }
 
 .text-container {
@@ -59,8 +67,9 @@ body {
 
 .otsikkoteksti {
   /*width: 100%;*/
-  font-size: 4vh; /*korkeus on 4vh * otsikon rivien määrä. Ylä- ja alamarginien pitää siis olla yhteensä (100vh-4vh-nav) */
+  font-size: 10vh; /*korkeus on 4vh * otsikon rivien määrä. Ylä- ja alamarginien pitää siis olla yhteensä (100vh-4vh-nav) */
   flex-direction: column;
+  line-height: normal;
   text-align: center;
   z-index: 1;
 }
@@ -156,9 +165,9 @@ nav {
   margin-right: 0.8vw;
 }
 
-.hamburgericon:hover,
-.hamburgericon:focus {
-  background-color: #2980b9;
+.dropbtn:hover .dropbtn:focus,
+.dropbtn:active {
+  background-color: #010712;
 }
 
 .osa {
@@ -179,10 +188,12 @@ nav {
   justify-content: flex-end;
 }
 
+/* Tämä vain jos mobiilin nav napin väri koko ajan eri 
 .dropbtn:hover,
 .dropbtn:focus {
   background-color: #2980b9;
 }
+*/
 
 .dropdown {
   position: relative;
@@ -301,7 +312,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -502,7 +512,7 @@ header {
 
   .fixednav {
     padding: 2em;
-    width: 66vw;
+    width: calc(100vw - 4em); /* koko näytön leveys - 4em on yht. paddingin */
   }
 
   .menuotsikko {
@@ -524,6 +534,7 @@ header {
 
   .menu {
     padding-left: 4vw;
+    padding-right: 2vw;
   }
 
   nav {
