@@ -8,8 +8,8 @@ function topFunction() {
 // JavaScript code here
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-  var fixedNav = document.querySelector(".fixednav");
-  fixedNav.style.filter = "none";
+  var fixedNav = document.querySelector(".fixednav"); // mobiilissa dropshadow pois
+  fixedNav.style.filter = "none"; // mobiilissa dropshadow pois
 }
 
 // Close the dropdown menu if the user clicks outside of it

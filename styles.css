@@ -156,9 +156,9 @@ nav {
   margin-right: 0.8vw;
 }
 
-.hamburgericon:hover,
-.hamburgericon:focus {
-  background-color: #2980b9;
+.dropbtn:hover .dropbtn:focus,
+.dropbtn:active {
+  background-color: #010712;
 }
 
 .osa {
@@ -179,10 +179,12 @@ nav {
   justify-content: flex-end;
 }
 
+/* Tämä vain jos mobiilin nav napin väri koko ajan eri 
 .dropbtn:hover,
 .dropbtn:focus {
   background-color: #2980b9;
 }
+*/
 
 .dropdown {
   position: relative;
