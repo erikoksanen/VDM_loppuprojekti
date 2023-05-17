@@ -21,21 +21,23 @@
         </button>
         <div class="menu">
           <div class="menubuttons" id="dropdown-content">
-            <a class="menubutton" href="#anglismeja">anglismeja</a>
-            <a class="menubutton" href="#miksitarkeaa">tärkeää?</a>
-            <a class="menubutton" href="#luelisaa">lue lisää</a>
+            <a class="menubutton" href="#scroll-target-1">anglismeja</a>
+            <a class="menubutton" href="#scroll-target-4">tärkeää?</a>
+            <a class="menubutton" href="#scroll-target-5">lue lisää</a>
           </div>
-          <button onclick="myFunction()" class="dropbtn" class="hamburgericon">
-            Dropdown
-          </button>
+          <button
+            onclick="myFunction()"
+            class="dropbtn"
+            class="hamburgericon"
+          ></button>
         </div>
       </div>
 
       <div class="mobilenav" class="dropdown">
         <div id="myDropdown" class="dropdown-content">
-          <a class="dropwdown-text" href="#anglismeja">anglismeja</a>
-          <a class="dropwdown-text" href="#miksitarkeaa">tärkeää?</a>
-          <a class="dropwdown-text" href="#luelisaa">lue lisää</a>
+          <a class="dropwdown-text" href="#scroll-target-1">anglismeja</a>
+          <a class="dropwdown-text" href="#scroll-target-3">tärkeää?</a>
+          <a class="dropwdown-text" href="#scroll-target-5">lue lisää</a>
         </div>
       </div>
     </nav>
@@ -69,14 +71,19 @@
     </div>
 
     <div class="osa">
-      <div class="text-container" id="anglismeja">
+      <div class="scroll-target" id="scroll-target-1"></div>
+      <div class="scroll-target" id="scroll-target-2"></div>
+      <div class="text-container">
         <h1>Anglismit ympärillämme</h1>
-        <p>Anglismit ja englannin sekoittaminen suomen kieleen ovat ilmiöinä 
-            vakiintuneet osaksi puhettamme -  ja katukuvaamme. <br/>
-            Mutta tuoko englannin sekoittaminen automaattisesti aina lisäarvoa keskusteluun? <br/>
-            Vie hiiresi kuvien päälle nähdäksesi vaihtoehtoja anglismeille ympärillämme!</p>
+        <p class="anglismiteksti">
+          Anglismit ja englannin sekoittaminen suomen kieleen ovat ilmiöinä
+          vakiintuneet osaksi puhettamme ja katukuvaamme. Mutta tuoko englannin
+          sekoittaminen automaattisesti aina lisäarvoa keskusteluun?
+          <br />
+          Vie hiiresi kuvien päälle nähdäksesi vaihtoehtoja anglismeille
+          ympärillämme!
+        </p>
         <div class="slideshow-container">
-
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fader">
             <div class="numbertext">1 / 8</div>
@@ -117,15 +124,14 @@
             <div class="numbertext">8 / 8</div>
             <img id="safespace"src="Pictures/SafeSpace_finglish 2.png" style="width:30vw">
           </div>
-        
+
           <!-- Next and previous buttons -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
-        
+
         <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div class="dots">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
@@ -135,12 +141,12 @@
           <span class="dot" onclick="currentSlide(7)"></span>
           <span class="dot" onclick="currentSlide(8)"></span>
         </div>
-        
-        </div>
       </div>
     </div>
 
     <div class="osa">
+      <div class="scroll-target" id="scroll-target-3"></div>
+      <div class="scroll-target" id="scroll-target-4"></div>
       <div class="text-container" id="miksitarkeaa">
         <h1>Miksi tämä on tärkeää?</h1>
         <div class="ball-container">
