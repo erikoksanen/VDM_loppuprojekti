@@ -57,29 +57,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const fromtop1 = document.querySelector("#slide1").offsetTop;
-const fromtop2 = document.querySelector("#slide2").offsetTop;
-const fromtop3 = document.querySelector("#slide3").offsetTop;
-const fromtop4 = document.querySelector("#slide4").offsetTop;
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > fromtop1 - window.innerHeight) {
-    document.querySelector("#slide1").classList.add("linkki_o");
-  }
-  if (window.pageYOffset > fromtop2 - window.innerHeight) {
-    document.querySelector("#slide2").classList.add("linkki_v");
-  }
-  if (window.pageYOffset > fromtop3 - window.innerHeight) {
-    document.querySelector("#slide3").classList.add("linkki_o");
-  }
-  if (window.pageYOffset > fromtop4 - window.innerHeight) {
-    document.querySelector("#slide4").classList.add("linkki_v");
-  }
-});
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
@@ -153,3 +130,28 @@ for (let k = 0; k < images3.length; k++) {
     images3[k].src = vuorovaikutukset[ind];
   });
 }
+
+// lue lisää
+
+const fromtop1 = document.querySelector("#slide1").offsetTop;
+const fromtop2 = document.querySelector("#slide2").offsetTop;
+const fromtop3 = document.querySelector("#slide3").offsetTop;
+const fromtop4 = document.querySelector("#slide4").offsetTop;
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > fromtop1 - window.innerHeight) {
+    document.querySelector("#slide1").classList.add("linkki_o");
+  }
+  if (window.pageYOffset > fromtop2 - window.innerHeight) {
+    document.querySelector("#slide2").classList.add("linkki_v");
+  }
+  if (window.pageYOffset > fromtop3 - window.innerHeight) {
+    document.querySelector("#slide3").classList.add("linkki_o");
+  }
+  if (window.pageYOffset > fromtop4 - window.innerHeight) {
+    document.querySelector("#slide4").classList.add("linkki_v");
+  }
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);

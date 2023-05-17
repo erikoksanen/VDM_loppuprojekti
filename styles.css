@@ -595,12 +595,12 @@ header {
   flex-direction: column;
   text-decoration: none;
   color: rgb(243, 243, 229);
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-right: 45vw;
   text-align: right;
-  padding: 3vw 5vw;
+  padding: 2vw;
   background-color: #2e4f80;
-  font-size: 0.8em;
+  width: 55vw;
 }
 
 .linkki:nth-child(odd) {
