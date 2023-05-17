@@ -107,3 +107,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// Miksi tämä on tärkeää?
+const imageSources = [
+  './Pictures/Kulttuuri.png',
+  './Pictures/Group12.png'
+];
+
+const images = document.getElementsByClassName('kulttuurikuvat');
+let currentIndex = 0;
+
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % imageSources.length;
+    images[i].src = imageSources[currentIndex];
+  })};
