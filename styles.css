@@ -601,6 +601,10 @@ header {
   }
 }
 
+.kulttuurikuvat {
+  width: 25%;
+}
+
 @media (min-width: 680px) {
   /*jos laitteen leveys on yli 680px, niin: */
 
