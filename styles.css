@@ -183,7 +183,7 @@ nav {
 }
 
 .luelisaa {
-  margin-top: 40vh;
+  padding-top: 40vh;
 }
 .dropbtn {
   background-color: #010712;
@@ -335,44 +335,47 @@ nav {
 .fader {
   animation-name: fader;
   animation-duration: 1.5s;
-
 }
 
 #fazer:hover {
-  content: url(Pictures/Fazer_suomi.png)
+  content: url(Pictures/Fazer_suomi.png);
 }
 
 #bakery:hover {
-  content: url(Pictures/Bakery_suomi.png)
+  content: url(Pictures/Bakery_suomi.png);
 }
 
 #crumble:hover {
-  content: url(Pictures/Crumble_suomi\ 1.png)
+  content: url(Pictures/Crumble_suomi\ 1.png);
 }
 
 #fanta:hover {
-  content: url(Pictures/Fanta_suomi.png)
+  content: url(Pictures/Fanta_suomi.png);
 }
 
 #lemonade:hover {
-  content: url(Pictures/Lemonade_suomi.png)
+  content: url(Pictures/Lemonade_suomi.png);
 }
 
 #ruka:hover {
-  content: url(Pictures/Ruka_suomi.png)
+  content: url(Pictures/Ruka_suomi.png);
 }
 
 #safespace:hover {
-  content: url(Pictures/SafeSpace_suomi.png)
+  content: url(Pictures/SafeSpace_suomi.png);
 }
 
 #tripla:hover {
-  content: url(Pictures/Tripla_suomi.png)
+  content: url(Pictures/Tripla_suomi.png);
 }
 
 @keyframes fader {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .dropdown-content a {
   color: black;
