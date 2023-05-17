@@ -22,6 +22,11 @@ body {
   font-family: "Futura";
   text-transform: uppercase;
   font-size: 3em;
+  background-image: url("Pictures/Stars.png");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
+  font-size: 1.5em;
   font-weight: bold;
   color: #000;
   padding: 0;
@@ -29,8 +34,9 @@ body {
   align-items: center;
   justify-content: center;
   color: aliceblue;
-  margin-top: 38vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
-  margin-bottom: 47vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
+  height: 91vh;
+  /*margin-top: 43vh; /*ks. hampurilasvalikon napin korkeus ja padding  */
+  /*margin-bottom: 48vh; /* jotta olisi keskellä, (100vh-hampurilasvalikon napin korkeus ja padding-otsikon font-size)-margin-top */
 }
 
 .text-container {
@@ -306,7 +312,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -411,8 +416,6 @@ header {
 .fade {
   max-width: 800px;
   margin: auto;
-  border: 1px solid red;
-
 }
 
 .fade-on {
@@ -508,7 +511,7 @@ header {
 
   .fixednav {
     padding: 2em;
-    width: 66vw;
+    width: calc(100vw - 4em); /* koko näytön leveys - 4em on yht. paddingin */
   }
 
   .menuotsikko {
@@ -530,6 +533,7 @@ header {
 
   .menu {
     padding-left: 4vw;
+    padding-right: 2vw;
   }
 
   nav {
