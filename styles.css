@@ -408,8 +408,6 @@ header {
 .fade {
   max-width: 800px;
   margin: auto;
-  border: 1px solid red;
-
 }
 
 .fade-on {
@@ -505,7 +503,7 @@ header {
 
   .fixednav {
     padding: 2em;
-    width: 66vw;
+    width: calc(100vw - 4em); /* koko näytön leveys - 4em on yht. paddingin */
   }
 
   .menuotsikko {
@@ -527,6 +525,7 @@ header {
 
   .menu {
     padding-left: 4vw;
+    padding-right: 2vw;
   }
 
   nav {
