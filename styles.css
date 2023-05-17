@@ -680,8 +680,11 @@ header {
   }
 }
 
-.kulttuurikuvat {
+.kulttuurikuvat,
+.identiteettikuvat,
+.vuorovaikutuskuvat {
   width: 25%;
+  margin-top: 10vw;
 }
 
 @media (min-width: 680px) {

@@ -109,7 +109,7 @@ function showSlides(n) {
 }
 
 // Miksi tämä on tärkeää?
-const imageSources = [
+const kulttuurit = [
   './Pictures/Kulttuuri.png',
   './Pictures/Group12.png'
 ];
@@ -119,6 +119,35 @@ let currentIndex = 0;
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % imageSources.length;
-    images[i].src = imageSources[currentIndex];
+    currentIndex = (currentIndex + 1) % 2;
+    images[i].src = kulttuurit[currentIndex];
   })};
+
+const identiteetit = [
+  './Pictures/identiteetti1.png',
+  './Pictures/identiteetti2.png'
+];
+
+const images2 = document.getElementsByClassName('identiteettikuvat');
+let index = 0;
+
+for (let j = 0; j < images2.length; j++) {
+  images2[j].addEventListener('click', () => {
+    index = (index + 1) % 2;
+    images2[j].src = identiteetit[index];
+  })};
+
+const vuorovaikutukset = [
+  './Pictures/vuorovaikutus1.png',
+  './Pictures/vuorovaikutus2.png'
+];
+
+const images3 = document.getElementsByClassName('vuorovaikutuskuvat');
+let ind = 0;
+
+for (let k = 0; k < images3.length; k++) {
+  images3[k].addEventListener('click', () => {
+    ind = (ind + 1) % 2;
+    images3[k].src = vuorovaikutukset[ind];
+  });
+}
