@@ -688,6 +688,24 @@ header {
   margin-top: 10vw;
 }
 
+.uudellesivulle {
+  text-decoration: none;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 3vw;
+  background-color: cornflowerblue;
+  padding: 4%;
+  border-radius: 30px;
+}
+
+.pohja {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  
+}
+
 @media (min-width: 680px) {
   /*jos laitteen leveys on yli 680px, niin: */
 

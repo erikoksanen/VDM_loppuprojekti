@@ -1,10 +1,21 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html {
-    background-color: #fcfcfc;
-  }
+    body {
+        background-color: #010712;
+        background-image: linear-gradient(
+        #010712 15%,
+        50%,
+        #173158 70%,
+        transparent 100%
+        );
+        background-attachment: fixed; /*Muutetaan, kun tiedetään sivun pituus*/
+        color: aliceblue;
+        margin: 0px;
+        font-family: "Hind Guntur", sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
   
   .App {
     font-family: sans-serif;
