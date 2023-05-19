@@ -729,6 +729,10 @@ li {
   font-size: 2vw;
 }
 
+.alaotsikko {
+  margin-bottom: 10%;
+}
+
 @media (min-width: 680px) {
   /*jos laitteen leveys on yli 680px, niin: */
 
