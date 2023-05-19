@@ -387,7 +387,7 @@ nav {
   display: flex;
 }
 
-html,
+/*html,
 body,
 div,
 span,
@@ -403,7 +403,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -472,7 +471,7 @@ video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-}
+}*/
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -637,6 +636,31 @@ header {
   animation-iteration-count: 1;
 }
 
+
+@keyframes slideinleft {
+  from {
+    margin-left: -100%;
+   
+  }
+
+  to {
+    margin-left: 0%;
+
+  }
+}
+
+@keyframes slideinright {
+  from {
+    margin-left: 100%;
+   
+  }
+
+  to {
+    margin-right: 0%;
+
+  }
+}
+
 .dropdown {
   position: relative;
   display: flex;
@@ -655,25 +679,7 @@ header {
   padding-bottom: 1vh;
 }
 
-@keyframes slideinleft {
-  from {
-    margin-left: -100%;
-  }
 
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes slideinright {
-  from {
-    margin-left: 100%;
-  }
-
-  to {
-    margin-right: 0%;
-  }
-}
 
 .kulttuurikuvat,
 .identiteettikuvat,
