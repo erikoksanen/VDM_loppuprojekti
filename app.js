@@ -1,5 +1,3 @@
-console.log("moi");
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -59,6 +57,82 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+// Miksi tämä on tärkeää?
+const kulttuurit = [
+  './Pictures/Kulttuuri.png',
+  './Pictures/Group12.png'
+];
+
+const images = document.getElementsByClassName("kulttuurikuvat");
+let currentIndex = 0;
+
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % 2;
+    images[i].src = kulttuurit[currentIndex];
+  })};
+
+const identiteetit = [
+  './Pictures/identiteetti1.png',
+  './Pictures/identiteetti2.png'
+];
+
+const images2 = document.getElementsByClassName('identiteettikuvat');
+let index = 0;
+
+for (let j = 0; j < images2.length; j++) {
+  images2[j].addEventListener('click', () => {
+    index = (index + 1) % 2;
+    images2[j].src = identiteetit[index];
+  })};
+
+const vuorovaikutukset = [
+  './Pictures/vuorovaikutus1.png',
+  './Pictures/vuorovaikutus2.png'
+];
+
+const images3 = document.getElementsByClassName('vuorovaikutuskuvat');
+let ind = 0;
+
+for (let k = 0; k < images3.length; k++) {
+  images3[k].addEventListener('click', () => {
+    ind = (ind + 1) % 2;
+    images3[k].src = vuorovaikutukset[ind];
+  });
+}
+
+// lue lisää
+
 const fromtop1 = document.querySelector("#slide1").offsetTop;
 const fromtop2 = document.querySelector("#slide2").offsetTop;
 const fromtop3 = document.querySelector("#slide3").offsetTop;
@@ -81,29 +155,3 @@ window.addEventListener("scroll", () => {
 
 let slideIndex = 1;
 showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
