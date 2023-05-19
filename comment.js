@@ -7,8 +7,9 @@ function addComment() {
     const teksti = document.createTextNode(input);
     const li = document.createElement("li");
     const textdiv = document.createElement("div");
+    textdiv.classList.add("valmiskommentti");
     const deleteButton = document.createElement("button");
-    deleteButton.innerHTML = "Poista";
+    deleteButton.innerHTML = "x";
     textdiv.appendChild(teksti);
     li.appendChild(textdiv);
     li.appendChild(deleteButton);

@@ -82,6 +82,7 @@ h1 {
 }
 
 nav {
+  font-family: "Futura";
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -89,6 +90,8 @@ nav {
   border: 0px;
   height: 0vh;
 }
+
+
 
 .fixednav {
   display: flex;
@@ -387,91 +390,7 @@ nav {
   display: flex;
 }
 
-/*html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}*/
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -525,7 +444,7 @@ header {
 
 .title {
   color: white;
-  font-family: sans-serif;
+  font-family: "sans-serif";
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
@@ -688,7 +607,7 @@ header {
   margin-top: 10vw;
 }
 
-.uudellesivulle {
+/*.uudellesivulle {
   text-decoration: none;
   color: #f2f2f2;
   text-align: center;
@@ -696,14 +615,118 @@ header {
   background-color: cornflowerblue;
   padding: 4%;
   border-radius: 30px;
-}
+}*/
 
 .pohja {
   display: flex;
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 10%;
-  
+}
+ 
+.uudellesivulle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: aliceblue;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.uudellesivulle:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.keskustelualusta {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 1%;
+}
+
+.takaisin {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Futura";
+  font-size: 2em;
+}
+
+.takasnappi {
+  margin: 5%;
+  margin-bottom: 3%;
+  justify-content: center;
+}
+
+.keskustelekampanjasta {
+  font-family: "Futura";
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  margin: 10%;
+  margin-top: 0;
+}
+
+.nappula {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: aliceblue;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+}
+
+.nappula:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.nappula-container {
+  display: flex;
+  justify-content: center;
+}
+
+.kommentit {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  text-align: center;
+}
+
+.valmiskommentti {
+  font-family: "Futura";
+  font-size: 2vw;
 }
 
 @media (min-width: 680px) {
@@ -784,6 +807,7 @@ header {
 
   h1 {
     font-size: 3em;
+    font-family: "Futura";
   }
 
   .alaotsikko {
@@ -819,6 +843,11 @@ header {
     font-size: 2.5em;
   }
 
+  .palloteksti {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
   .next {
     right: -15%;
     font-size: 3vh;
