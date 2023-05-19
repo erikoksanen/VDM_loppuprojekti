@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
   for (fade of fadelist) {
     if (
       fade.getBoundingClientRect().top > windowHeight / 4 &&
-      fade.getBoundingClientRect().top < windowHeight / 3
+      fade.getBoundingClientRect().top < windowHeight / 2.5
     ) {
       fade.classList.add("fade-on");
     } else fade.classList.remove("fade-on");
@@ -139,16 +139,16 @@ const fromtop3 = document.querySelector("#slide3").offsetTop;
 const fromtop4 = document.querySelector("#slide4").offsetTop;
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > fromtop1 - window.innerHeight) {
+  if (window.pageYOffset > fromtop1 - window.innerHeight / 10) {
     document.querySelector("#slide1").classList.add("linkki_o");
   }
-  if (window.pageYOffset > fromtop2 - window.innerHeight) {
+  if (window.pageYOffset > fromtop2 - window.innerHeight / 10) {
     document.querySelector("#slide2").classList.add("linkki_v");
   }
-  if (window.pageYOffset > fromtop3 - window.innerHeight) {
+  if (window.pageYOffset > fromtop3 - window.innerHeight / 10) {
     document.querySelector("#slide3").classList.add("linkki_o");
   }
-  if (window.pageYOffset > fromtop4 - window.innerHeight) {
+  if (window.pageYOffset > fromtop4 - window.innerHeight / 10) {
     document.querySelector("#slide4").classList.add("linkki_v");
   }
 });
