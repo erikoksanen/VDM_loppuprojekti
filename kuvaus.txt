@@ -1,0 +1,10 @@
+Ryhmässä mukana ovat olleet Antti Komulainen, Roosa Ripatti, Erik Oksanen ja Helmi Tormilainen.
+Teimme kampanjasivut Suomeksi Sanottuna -kampanjalle koska kampanjasivut kiteyttävät hyvin kampanjamme ydinsanoman.
+
+Ryhmätyön tekeminen meni hyvin. Yhteistyö GitHubilla onnistui alun oppimiskäyrän jälkeen kivasti.
+
+Teimme työnjakoa sektioittain. Työmäärä oli juuri sopiva tälle ryhmäkoolle.
+
+Jotta palvelu toimisi oikeasti niin tulisi meidän tallentaa kommentit jollekin palvelimelle jossa ne näkyisivät muillekin käyttäjille.
+
+Nettisivut löytyvät osoitteesta: 
