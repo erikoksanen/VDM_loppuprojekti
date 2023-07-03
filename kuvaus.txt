@@ -1,5 +1,5 @@
 Ryhmässä mukana ovat olleet Antti Komulainen, Roosa Ripatti, Erik Oksanen ja Helmi Tormilainen.
-Teimme kampanjasivut Suomeksi Sanottuna -kampanjalle koska kampanjasivut kiteyttävät hyvin kampanjamme ydinsanoman.
+Teimme kampanjasivut Suomeksi Sanottuna -kampanjalle, koska kampanjasivut kiteyttävät hyvin kampanjamme ydinsanoman.
 
 Ryhmätyön tekeminen meni hyvin. Yhteistyö GitHubilla onnistui alun oppimiskäyrän jälkeen kivasti. Githubin ja Telegramin avulla kaikki myös pysyivät kärryillä projektin etenemisestä.
 
